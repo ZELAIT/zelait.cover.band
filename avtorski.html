@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+
+<html lang="uk">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Авторські пісні</title>
+<link href="main.css" rel="stylesheet"/>
+<style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .back-arrow {
+      color: white;
+      text-decoration: none;
+      font-size: 28px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+
+    .songs-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .song {
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+
+    .song-header {
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .song img {
+      width: 100%;
+      display: block;
+    }
+
+    .song-title {
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 0;
+    }
+
+    .song-details {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .song iframe {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 10px;
+    }
+
+    .platform-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .platform-icons a img {
+      width: 32px;
+      height: 32px;
+      transition: transform 0.2s ease;
+    }
+
+    .platform-icons a:hover img {
+      transform: scale(1.15);
+    }
+  
+    .fade-in {
+      animation: fadeInPage 0.8s ease-in-out;
+    }
+
+    @keyframes fadeInPage {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    </style>
+<script>
+    function toggleDetails(id) {
+      var content = document.getElementById(id);
+      content.style.display = content.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+</head>
+<body class="fade-in">
+<a class="back-arrow" href="index.html">←</a>
+<h1>Авторські пісні</h1>
+<div class="songs-container">
+<div class="song">
+<div class="song-header" onclick="toggleDetails('song1')">
+<img alt="Дякую Батьки" src="IMG_2590.jpg"/>
+<div class="song-title">ZELAIT – Дякую Батьки</div>
+</div>
+<div class="song-details" id="song1">
+<iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/KOTcCryfok4"></iframe>
+<div class="platform-icons">
+<a href="https://music.apple.com/ua/album/1676664807?i=1676664810&amp;l=uk" target="_blank">
+<img alt="Apple Music" src="apple_music.svg"/>
+</a>
+<a href="https://open.spotify.com" target="_blank">
+<img alt="Spotify" src="spotify.svg"/>
+</a>
+<a href="https://music.youtube.com" target="_blank">
+<img alt="YouTube Music" src="youtube_music.svg"/>
+</a>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="song-header" onclick="toggleDetails('song2')">
+<img alt="Любов це ти" src="IMG_2592.jpg"/>
+<div class="song-title">ZELAIT – Любов це ти</div>
+</div>
+<div class="song-details" id="song2">
+<iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/WYCbo5DNYa0"></iframe>
+<div class="platform-icons">
+<a href="https://music.apple.com/ua/album/1563788256?i=1563788281&amp;l=uk" target="_blank">
+<img alt="Apple Music" src="apple_music.svg"/>
+</a>
+<a href="https://open.spotify.com" target="_blank">
+<img alt="Spotify" src="spotify.svg"/>
+</a>
+<a href="https://music.youtube.com" target="_blank">
+<img alt="YouTube Music" src="youtube_music.svg"/>
+</a>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="song-header" onclick="toggleDetails('song3')">
+<img alt="Новий Рік" src="IMG_2593.jpg"/>
+<div class="song-title">ZELAIT – Новий Рік</div>
+</div>
+<div class="song-details" id="song3">
+<iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/KUwz5Pcrgyk"></iframe>
+<div class="platform-icons">
+<a href="https://music.apple.com/ua/album/1601688220?i=1601688220&amp;l=uk" target="_blank">
+<img alt="Apple Music" src="apple_music.svg"/>
+</a>
+<a href="https://open.spotify.com" target="_blank">
+<img alt="Spotify" src="spotify.svg"/>
+</a>
+<a href="https://music.youtube.com" target="_blank">
+<img alt="YouTube Music" src="youtube_music.svg"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

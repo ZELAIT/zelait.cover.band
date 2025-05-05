@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Про гурт</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .back-link {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      color: #aaa;
+      font-size: 22px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .back-link:hover {
+      color: #fff;
+    }
+
+    .about-container {
+      max-width: 900px;
+      margin: 40px auto 20px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .about-title {
+      font-size: 42px;
+      font-weight: bold;
+      background: linear-gradient(90deg, #fff 0%, #777 50%, #fff 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      animation: scaleUp 0.8s ease-in-out;
+    }
+
+    .about-photo {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      margin: 30px auto;
+      display: block;
+    }
+
+    .about-text {
+      font-size: 18px;
+      line-height: 1.6;
+      text-align: justify;
+      white-space: pre-line;
+      padding: 0 10px;
+    }
+
+    @keyframes scaleUp {
+      0% {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .about-container {
+        padding: 10px;
+      }
+      .about-title {
+        font-size: 38px;
+      }
+      .about-text {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-link" title="Назад на головну">&#8592;</a>
+
+  <div class="about-container">
+    <h1 class="about-title">Про гурт</h1>
+    <img src="zelait-about.jpg" alt="ZELAIT band" class="about-photo">
+    <div class="about-text">
+ZELAIT — це команда професійних музикантів, які живуть сценою. У складі гурту — досвідчені артисти, кожен із яких має свою унікальну історію, творчий шлях і впізнаване звучання.
+
+Ми зібралися разом, щоб створювати не просто музику, а емоції, які залишаються з вами надовго. Кожен виступ — це 100% віддачі, власна енергія та щире бажання зробити кожен момент незабутнім.
+
+ZELAIT — це коли сцена дихає разом із музикою. Ми поєднуємо вокал, DJ-сети, саксофон, клавіші та ударні в одному подиху, щоб створити звучання, яке відчувається всім тілом.
+
+Ми кайфуємо від живих виступів, створюємо власні треки й постійно шукаємо нові способи здивувати. Наш стиль — це мікс енергії, емоцій і щирості.
+ZELAIT — це не просто музика. Це момент. І ти в ньому.
+
+Наші авторські треки звучать на провідних радіостанціях України, включно з KISS FM, де неодноразово ставали топ-хітами ефіру. Ми не просто виконуємо музику — ми її створюємо. І робимо це з душею.
+    </div>
+  </div>
+</body>
+</html>

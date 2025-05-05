@@ -1,0 +1,113 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #111;
+  color: #fff;
+}
+
+.repertuar-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.tab-button, .download-button {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.tab-button:hover, .download-button:hover {
+  background-color: #333;
+  border-color: #666;
+}
+
+.tab-button.active {
+  background-color: #555;
+  color: #fff;
+  border-color: #777;
+}
+
+#searchInput {
+  padding: 10px;
+  width: 220px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.song-list {
+  display: none;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.song-list.active {
+  display: block;
+}
+
+.song-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.song-list li {
+  padding: 6px 12px;
+  border-bottom: 1px solid #222;
+  transition: background 0.2s ease;
+}
+
+.song-list li:hover {
+  background-color: #1f1f1f;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .controls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #searchInput {
+    width: 100%;
+  }
+}
+.section-title {
+  text-align: center;
+  font-size: 42px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: linear-gradient(to right, #ffffff, #888888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+  position: relative;
+}

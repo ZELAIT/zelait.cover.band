@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Контакти | ZELAIT</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 40px;
+      background-color: #121212;
+      color: #fff;
+      animation: fadeInPage 0.8s ease-in-out;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 30px;
+    }
+
+    .contact-container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      font-size: 1.2em;
+      margin-bottom: 40px;
+    }
+
+    .contact-info a {
+      color: #9ad0ec;
+      text-decoration: none;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin-bottom: 40px;
+      border-radius: 10px;
+    }
+
+    .back-arrow {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .back-arrow a {
+      color: #ccc;
+      font-size: 1.2em;
+      text-decoration: none;
+    }
+
+    @keyframes fadeInPage {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Контакти</h1>
+  <div class="contact-container">
+    <div class="contact-info">
+      <div>📞 <a href="tel:+380936691074">+380 (93) 669 10 74</a></div>
+      <div>📧 <a href="mailto:glovacomua@gmail.com">glovacomua@gmail.com</a></div>
+      <div>📍 Сокільники, вулиця Івана Франка 6</div>
+      <div>📸 <a href="https://www.instagram.com/zelait_band?igsh=MWZjamJ2c3Zxanpteg==" target="_blank">@zelait_band</a></div>
+    </div>
+
+    <iframe 
+      src="https://maps.google.com/maps?q=Сокільники,+вулиця+Івана+Франка+6&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      allowfullscreen
+    ></iframe>
+
+    <div class="back-arrow">
+      <a href="index.html">← На головну</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Репертуар | ZELAIT</title>
+  <link rel="stylesheet" href="repertuar.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    .section-title {
+      text-align: center;
+      font-size: 42px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 2px;
+      background: linear-gradient(to right, #ffffff, #888888);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .back-arrow {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      font-size: 28px;
+      text-decoration: none;
+      color: #ccc;
+      transition: color 0.3s ease;
+      z-index: 1000;
+    }
+
+    .back-arrow:hover {
+      color: #fff;
+    }
+
+    body {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-arrow">←</a>
+  <div class="repertuar-container">
+    <h1 class="section-title">Репертуар</h1>
+
+    <div class="controls">
+      <button class="tab-button active" data-target="ukrainian">Українські</button>
+      <button class="tab-button" data-target="foreign">Зарубіжні</button>
+      <button class="tab-button" data-target="folk">Народні</button>
+      <input type="text" id="searchInput" placeholder="Пошук по піснях...">
+      <a href="repertuar.pdf" class="download-button" download>Скачати PDF</a>
+    </div>
+
+    <div id="ukrainian" class="song-list active">
+      <ul>
+        <li>DOROFEEVA – Кохаю, але не зовсім</li>
+        <li>MONATIK – Старі фотографії</li>
+        <li>Антитіла – Все красиво</li>
+      </ul>
+    </div>
+
+    <div id="foreign" class="song-list">
+      <ul>
+        <li>Bon Jovi – It’s My Life</li>
+        <li>Britney Spears – Toxic</li>
+        <li>Daft Punk – Get Lucky</li>
+      </ul>
+    </div>
+
+    <div id="folk" class="song-list">
+      <ul>
+        <li>Несе Галя Воду</li>
+        <li>Гуцулка Ксеня</li>
+        <li>Ой у вишневому саду</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="repertuar.js"></script>
+</body>
+</html>
